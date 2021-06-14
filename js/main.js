@@ -32,37 +32,40 @@ function toggle(element, classes) {
 }
 
 
-
+let cont=0;
 let image= []
 document.querySelectorAll(".piece").forEach( piece => {
   piece.onclick = function() {
 
 
     const clicked= document.getElementsByClassName("clicked");
-
+cont++
 
  image.push(piece)
 
- console.log(image)
 
 
-    if(image.length===2){
-      
-      image[0].classList.innerHTML=image[1]
-      image[1].classList.innerHTML=image[0]
-   
+ if(image.length===2){
+console.log(image.length)
+   let pic1=''
+   let pic2=''
 
-    }
-   // toggle(image[0], [image[1] )
-    //toggle(image[1], [image[2] )
+      pic1=image[0].innerHTML
+      pic2=image[1].innerHTML
+      console.log(pic1)
+      console.log(pic2)
 
-    
-    //comsole.log('0000'+piece.childNodes.values)
-    //comsole.log('111'+piece[1])
-    memoryGame.pickedCards.push(card);
+      image[0].innerHTML=pic2
+      image[1].innerHTML=pic1
 
 
+      console.log( image[1])
+      console.log( image[0])
 
+      image= []  
+  }
+  
+  
 
 }
 
