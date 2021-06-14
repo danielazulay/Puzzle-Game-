@@ -4,8 +4,8 @@ class PuzzleGame{
     
     
         this.pieces=somePieces;
-        this.piecesSelected=0
         this.shuffles();
+
 
     }
     
@@ -18,38 +18,53 @@ class PuzzleGame{
           let rdmInd = Math.floor(Math.random() * len);
           this.pieces[len] = this.pieces[rdmInd];
           this.pieces[rdmInd] = temp;
+
+          
         }
-     //   console.log(rand)
+
+
+
     }
-    checkIfPair(piece1, piece2) {
-        this.piecesSelected++;
+
+    swap(num1,num2){
+
+
+     let objeto1 =  this.pieces.findIndex((piece)=>{
+
+       return piece.name===Number(num1)
+      })
+
+     let objeto2 =  this.pieces.findIndex((piece)=>piece.name===Number(num2))
+
+
     
-          this.isFinished();
-      
-      }
-    
+    let aux=''
+   aux =this.pieces[objeto1]
+
+  this.pieces[objeto1 ]= this.pieces[objeto2]
+  this.pieces[objeto2]=aux
+
+    }
+   
     
 
-    isFinished(pieces) {
-        piecesSelected++
-       let i=0
-        this.pieces.forEach(element => {
-            
-            if(element.name===i)
-            {
-                i++
-
-            }
-
-        });
-        if(i===this.pieces.length){
-            document.querySelector("#memory_board").innerHTML = "";
-            let h1 = document.createElement("h1");
-            h1.style.color = "pink";
-            h1.innerHTML = "YOU WON!!!";
-            document.querySelector(".game").appendChild(h1);
-            console.log('a=>>>'+i)
+    isFinished(){ 
+     let i =1
+     let cont=0
+       this.pieces.forEach(piece=>{
+        console.log(piece.name,i)
+          if(piece.name===i){
+           
+           cont ++
+          
+           }
+        i++
+        })
+         if(cont ===this.pieces.length) {
+            console.log('you win')
         }
+        //console.log(this.pieces)
+        //console.log(cont)
 
       }
     

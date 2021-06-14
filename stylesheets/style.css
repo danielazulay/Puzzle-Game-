@@ -58,19 +58,14 @@ display: inline-block;
    
 }
 
-.piece{
 
 
-  
-
-
-}
 
  .immagem{
-
-    height:170px;
-    width: 210px;
-background-size: cover;
+  height:170px;
+  width: 200px;
+  
+  background-size: 100%;
 }
 
 .foot{

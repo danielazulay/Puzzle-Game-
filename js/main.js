@@ -18,8 +18,8 @@ const pieces = [
 document.addEventListener("DOMContentLoaded", function(event){
 let html=''
 puzzleGame.pieces.forEach(element => {
-    html+=`<div class="piece" number-piece="${element.name}">`;
-    html+=`<div class="immagem" style="background: url(img/${element.img}) no-repeat"></div>`;
+  html+=`<div class="piece" >`;
+    html+=`<div class="immagem" id=${element.name} style="background: url(img/${element.img}) no-repeat"></div>`;
     html+=`</div>`;
     
 });
@@ -31,38 +31,57 @@ function toggle(element, classes) {
   
 }
 
-
 let cont=0;
 let image= []
+
+
+
+
 document.querySelectorAll(".piece").forEach( piece => {
   piece.onclick = function() {
+    image.push(piece)
+  //  game.push(piece)
+  // let name = piece.getAttribute('number-piece');
+ //  console.log(pieces.indexeOf(name))
+//console.log(name )
+//contagem de clicks
 
 
-    const clicked= document.getElementsByClassName("clicked");
-cont++
-
- image.push(piece)
+cont=cont+1
+let clicks = document.getElementById('clicked')
 
 
 
  if(image.length===2){
-console.log(image.length)
+  clicks.innerHTML= cont/2;
    let pic1=''
    let pic2=''
 
+
       pic1=image[0].innerHTML
+      let name0 = image[0].firstChild.id;
+      console.log(name0)
+      
+      
+
       pic2=image[1].innerHTML
-      console.log(pic1)
-      console.log(pic2)
+      let name1 = image[1].firstChild.id;
+      console.log(name1)
+
+
 
       image[0].innerHTML=pic2
       image[1].innerHTML=pic1
 
-
-      console.log( image[1])
-      console.log( image[0])
+      puzzleGame.swap(name0,name1)
+  
 
       image= []  
+
+
+      puzzleGame.isFinished()
+    //  console.log(game)
+
   }
   
   
