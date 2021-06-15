@@ -52,14 +52,16 @@ class PuzzleGame{
      let i =1
      let cont=0
        this.pieces.forEach(piece=>{
-        console.log(piece.name,i)
+    //    console.log(piece.name,i)
           if(piece.name===i){
            
            cont ++
-          
+       
            }
         i++
         })
+
+
          if(cont ===this.pieces.length) {
             console.log('you win')
         }

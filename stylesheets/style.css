@@ -58,14 +58,27 @@ display: inline-block;
    
 }
 
+#gameOpional{
+
+    background:#aa5151;
+    border:blue solid 2px ;
+	width:50px;
+
+   
+}
+.pieces1{
+   
+    height:50px;  width: 50px;
+}
+
+ .immagem {
+     
+  height:100%;
+  width: 100%;
 
 
 
- .immagem{
-  height:170px;
-  width: 200px;
-  
-  background-size: 100%;
+
 }
 
 .foot{
