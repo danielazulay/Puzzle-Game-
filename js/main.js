@@ -33,13 +33,13 @@ const pieces = [
 
   ];
 
-  
+
 
   let board=''
 
   board+=`<div class="gameOpional">`
-  board+=`<button type="button" ><p id="pieces">Facil</p></button>`
-  board+=`<button type="button"> <p id="pieces1">Dificil</p></button>`
+  board+=`<button type="button" id="opcao1">Easy</button>`
+  board+=`<button type="button"  id="opcao2">Hard</button>`
   board+=`</div>`
 
  
@@ -51,20 +51,22 @@ const pieces = [
   li.addEventListener("click", function(event) {
  escolha = event.target.id;
     
-
+console.log(event)
 
 let aux=[]
+let op=''
 
-if(escolha==='pieces'){
+if(escolha==='opcao1'){
  
 
   aux = [...pieces]
   document.querySelector(".gameOpional").innerHTML=''
+  op=' width="200" height="175"'
 
  }else{
   aux = [...pieces1] 
   document.querySelector(".gameOpional").innerHTML=''
-
+   op =' width="130" height="175"'
   
 }
 const puzzleGame = new PuzzleGame(aux);
@@ -72,14 +74,13 @@ const puzzleGame = new PuzzleGame(aux);
 
 let html=''
 puzzleGame.pieces.forEach(element => {
-  html+=`<div class="piece" >`;
-  //  html+=`<div class="immagem" id=${element.name} style="background: url(img/${element.img}) no-repeat"></div>`;
-  if(escolha==='pieces'){
-  html+=`<div class="immagem"id="${element.name}"  ><img id="${element.name}" src="../img/${element.img}" width="180" height="160"></div>`;
-  }else{
-    html+=`<div class="immagem" id="${element.name}"  ><img id="${element.name}" src="../img/${element.img}" width="130" height="175"></div>`
-  }
-    html+=`</div>`;
+  
+
+ 
+
+     html+=`<div class="piece" >`;
+     html+=`<div class="immagem"id="${element.name}"  ><img id="${element.name}" src="../img/${element.img}" ${op}></div>`;
+     html+=`</div>`;
 
 })
 
@@ -110,6 +111,7 @@ let clicks = document.getElementById('clicked')
 
 
  if(image.length===2){
+   
   clicks.innerHTML= cont/2;
    let pic1=''
    let pic2=''
@@ -136,17 +138,16 @@ let clicks = document.getElementById('clicked')
       image= []  
 
 
-      puzzleGame.isFinished()
+      puzzleGame.isFinished(escolha)
     //  console.log(game)
 
   }
-  
   
 
 }
 
 
-clicked.innerHTML = puzzleGame.piecesSelected;
+
 })
 
 

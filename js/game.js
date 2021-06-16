@@ -61,9 +61,33 @@ class PuzzleGame{
         i++
         })
 
+        let jogo=''
+       
+        if(escolha==='opcao1'){
+       
+          jogo="url(../img/jogo2.png)"
+        }else{
+
+          jogo="url(../img/jogo1.jpg)"
+        }
 
          if(cont ===this.pieces.length) {
-            console.log('you win')
+          document.querySelector(".game").innerHTML = "";
+          let div = document.createElement("div");
+          div.style.backgroundImage=jogo;
+          div.style.width='100%'
+           div.style.height='100%'
+          div.style.backgroundPosition='cover'
+          div.style.backgroundPosition='center'
+          div.style.backgroundPosition=jogo
+          let h2 = document.createElement("h2");
+            h2.style.color = "red";
+            h2.style.textAlign= "center";
+            h2.style.fontSize= "40px";
+            h2.style.marginTop= "30px"; 
+           h2.innerHTML = "YOU WON :)";
+           div.appendChild(h2);
+           document.querySelector(".game").appendChild(div);
         }
         //console.log(this.pieces)
         //console.log(cont)

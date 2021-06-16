@@ -23,6 +23,7 @@ nav{
 h1{
   padding-top: 2%;
   color: white;
+  margin-left: 40%;
 
 
 }
@@ -36,7 +37,6 @@ display: inline-block;
     background-image: url("/img/R29e69e2c3125fb2465ed62255ea99640.jpg");
     background-color: #cccccc;
 
-    
     background-position: center;
 
     background-size: cover;
@@ -58,18 +58,50 @@ display: inline-block;
    
 }
 
-#gameOpional{
+.gameOpional{
 
-    background:#aa5151;
-    border:blue solid 2px ;
-	width:50px;
+    background:rgba(81, 111, 194, 0.664);
+
+	width:50vw;
+	height:70vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
    
 }
-.pieces1{
-   
-    height:50px;  width: 50px;
+
+ #opcao1 {
+
+    height: auto;
+    width: 100px;
+border-radius: 80px;
+margin: 10px;
+
 }
+#opcao2 {
+
+    height: auto;
+    width: 100px;
+border-radius: 80px;
+margin: 10px;
+}
+
+#back{
+  
+    height: auto;
+    width: 100px;
+border-radius: 80px;
+
+display: flex;
+justify-content: center;
+align-self: center;
+
+}
+
+
+
 
  .immagem {
      
@@ -86,5 +118,7 @@ display: inline-block;
     height: 10vh;
     background-color:#4371BC;
     opacity: 0.5;
+    display: flex;
+    justify-content: center;
 }
 
