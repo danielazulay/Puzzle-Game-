@@ -79,7 +79,7 @@ puzzleGame.pieces.forEach(element => {
  
 
      html+=`<div class="piece" >`;
-     html+=`<div class="immagem"id="${element.name}"  ><img id="${element.name}" src="./img/${element.img}" ${op}></div>`;
+     html+=`<div class="immagem"id="${element.name}"  ><img id="${element.name}" src="img/${element.img}" ${op}></div>`;
      html+=`</div>`;
 
 })
