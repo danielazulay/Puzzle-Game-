@@ -39,7 +39,7 @@ const pieces = [
 
   board+=`<div class="gameOpional">`
   board+=`<button type="button" id="opcao1">Easy</button>`
-  board+=`<button type="button"  id="opcao2">Hard</button>`
+  board+=`<button type="button" id="opcao2">Hard</button>`
   board+=`</div>`
 
  

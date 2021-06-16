@@ -34,7 +34,7 @@ display: inline-block;
 }
 
 .back{
-    background-image: url("./img/R29e69e2c3125fb2465ed62255ea99640.jpg");
+    background-image: url("/img/R29e69e2c3125fb2465ed62255ea99640.jpg");
     background-color: #cccccc;
 
     background-position: center;
@@ -68,7 +68,7 @@ display: inline-block;
    display: flex;
    justify-content: center;
    align-items: center;
-  colo
+  
 }
 
  #opcao1 {
