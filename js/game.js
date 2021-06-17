@@ -61,20 +61,20 @@ class PuzzleGame{
         i++
         })
 
-        let jogo=''
+        let jogos=''
        
         if(escolha==='opcao1'){
        
-          jogo="url(../img/jogo2.png)"
+          jogos="url(./img/jogo2.png)"
         }else{
 
-          jogo="url(../img/jogo1.jpg)"
+          jogos="url(./img/jogo1.jpg)"
         }
 
          if(cont ===this.pieces.length) {
           document.querySelector(".game").innerHTML = "";
           let div = document.createElement("div");
-          div.style.backgroundImage=jogo;
+          div.style.backgroundImage=jogos;
           div.style.width='100%'
            div.style.height='100%'
           div.style.backgroundPosition='cover'
