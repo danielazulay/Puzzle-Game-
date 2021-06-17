@@ -66,7 +66,7 @@ class PuzzleGame{
         if(escolha==='opcao1'){
        
           jogo="url(./img/jogo2.png)"
-        }else {
+        }else if(escolha==='opcao2'){
 
           jogo="url(./img/jogo1.jpg)"
         }
@@ -76,12 +76,12 @@ class PuzzleGame{
          if(cont ===this.pieces.length) {
           document.querySelector(".game").innerHTML = "";
           let div = document.createElement("div");
-          div.style.backgroundImage=jogos;
+          div.style.backgroundImage=jogo;
           div.style.width='100%';
            div.style.height='100%';
           div.style.backgroundPosition='cover';
           div.style.backgroundPosition='center';
-          div.style.backgroundPosition= jogo;
+
           let h2 = document.createElement("h2");
             h2.style.color = "red";
             h2.style.textAlign= "center";
