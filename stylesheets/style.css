@@ -92,10 +92,10 @@ margin: 10px;
     height: auto;
     width: 100px;
 border-radius: 80px;
-
 display: flex;
 justify-content: center;
 align-self: center;
+margin-top: 15px;
 
 }
 

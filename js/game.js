@@ -65,11 +65,13 @@ class PuzzleGame{
        
         if(escolha==='opcao1'){
        
-          jogos="url(../img/jogo2.png)"
+          jogos="url(./img/jogo2.png)"
         }else{
 
-          jogos="url(../img/jogo1.jpg)"
+          jogos="url(./img/jogo1.jpg)"
         }
+
+        
 
          if(cont ===this.pieces.length) {
           document.querySelector(".game").innerHTML = "";

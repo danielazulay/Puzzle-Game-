@@ -32,8 +32,11 @@ const pieces = [
 
 
   ];
-
-
+  let escolha=''
+function criarOpcoes(){
+  document.querySelector(".foot").innerHTML='';
+  let clicks = document.getElementById('clicked')
+  clicks.innerHTML= 0;
 
   let board=''
 
@@ -44,56 +47,60 @@ const pieces = [
 
  
   document.querySelector(".game").innerHTML=board;
-  
-  let li = document.querySelector(".gameOpional")
-  let escolha=''
+  let buttons = document.querySelector(".gameOpional")
+  let opt1 = buttons .querySelector("#opcao1");
 
-  li.addEventListener("click", function(event) {
+  let opt2 = buttons .querySelector("#opcao2");
+
+
+  let aux=[]
+
+
+  opt1.addEventListener("click", function(event) {
  escolha = event.target.id;
-    
-console.log(event)
-
-let aux=[]
-let op=''
-
-if(escolha==='opcao1'){
- 
-
-  aux = [...pieces]
-  document.querySelector(".gameOpional").innerHTML=''
-  op=' width="200" height="170"'
-
- }else{
-  aux = [...pieces1] 
-  document.querySelector(".gameOpional").innerHTML=''
-   op =' width="130" height="170"'
-  
-}
-const puzzleGame = new PuzzleGame(aux);
+ aux = [...pieces];
+ document.querySelector(".gameOpional").innerHTML='';
+ op=' width="200" height="170"';
+ const puzzleGame = new PuzzleGame(aux);
+ criarCartas(op,puzzleGame)
+  })
 
 
-let html=''
-puzzleGame.pieces.forEach(element => {
-  
+  opt2.addEventListener("click", function(event) {
+    escolha = event.target.id;
+      aux = [...pieces1] ;
+      document.querySelector(".gameOpional").innerHTML=''
+       op =' width="130" height="170"';
+       const puzzleGame = new PuzzleGame(aux);
+       criarCartas(op,puzzleGame)
+     });
 
- 
+    }
+
+    criarOpcoes()
+ function criarCartas(op,puzzleGame){
+  let html='';
+puzzleGame.pieces.forEach(element => { 
+
+
 
      html+=`<div class="piece" >`;
      html+=`<div class="immagem"id="${element.name}"  ><img id="${element.name}" src="./img/${element.img}" ${op}></div>`;
      html+=`</div>`;
-
-})
-
-
+});
 
 
 document.querySelector(".game").innerHTML=html;
-
-
-
 let cont=0;
 let image= []
 
+let botao=''
+botao+=`<div class="botaoLevel">`
+botao+=`<button  id="back" type="button" onClick="  criarOpcoes() ">Voltar</button>`
+botao+=`</div>`
+
+
+document.querySelector(".foot").innerHTML=botao;
 
 document.querySelectorAll(".piece").forEach( piece => {
   piece.onclick = function() {
@@ -148,8 +155,14 @@ let clicks = document.getElementById('clicked')
 
 
 
-})
-
-
+});
 }
-);
+
+
+
+
+
+
+
+
+
