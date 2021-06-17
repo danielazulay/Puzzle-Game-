@@ -61,12 +61,12 @@ if(escolha==='opcao1'){
 
   aux = [...pieces]
   document.querySelector(".gameOpional").innerHTML=''
-  op=' width="200" height="175"'
+  op=' width="200" height="170"'
 
  }else{
   aux = [...pieces1] 
   document.querySelector(".gameOpional").innerHTML=''
-   op =' width="130" height="175"'
+   op =' width="130" height="170"'
   
 }
 const puzzleGame = new PuzzleGame(aux);
