@@ -75,11 +75,11 @@ class PuzzleGame{
           document.querySelector(".game").innerHTML = "";
           let div = document.createElement("div");
           div.style.backgroundImage=jogos;
-          div.style.width='100%'
-           div.style.height='100%'
-          div.style.backgroundPosition='cover'
-          div.style.backgroundPosition='center'
-          div.style.backgroundPosition=jogo
+          div.style.width='100%';
+           div.style.height='100%';
+          div.style.backgroundPosition='cover';
+          div.style.backgroundPosition='center';
+          div.style.backgroundPosition=jogos;
           let h2 = document.createElement("h2");
             h2.style.color = "red";
             h2.style.textAlign= "center";
