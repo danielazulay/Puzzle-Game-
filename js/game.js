@@ -52,7 +52,7 @@ class PuzzleGame{
      let i =1
      let cont=0
        this.pieces.forEach(piece=>{
-    //    console.log(piece.name,i)
+
           if(piece.name===i){
            
            cont ++
@@ -62,13 +62,13 @@ class PuzzleGame{
         })
 
         let jogos=''
-       
+
         if(escolha==='opcao1'){
        
-          jogos="url(../img/jogo2.png)"
+          jogos="url(./img/jogo2.png)"
         }else if(escolha==='opcao2'){
 
-          jogos="url(../img/jogo1.jpg)"
+          jogos="url(./img/jogo1.jpg)"
         }
 
         
@@ -91,8 +91,7 @@ class PuzzleGame{
            div.appendChild(h2);
            document.querySelector(".game").appendChild(div);
         }
-        //console.log(this.pieces)
-        //console.log(cont)
+   
 
       }
     
