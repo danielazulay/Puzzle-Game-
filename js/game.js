@@ -65,10 +65,10 @@ class PuzzleGame{
 
         if(escolha==='opcao1'){
        
-          jogo="url(./img/jogo2.png)"
+          jogo="url(../img/jogo2.png)"
         }else if(escolha==='opcao2'){
 
-          jogo="url(./img/jogo1.jpg)"
+          jogo="url(../img/jogo1.jpg)"
         }
 
         
