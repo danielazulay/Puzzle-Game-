@@ -81,7 +81,7 @@ class PuzzleGame{
            div.style.height='100%';
           div.style.backgroundPosition='cover';
           div.style.backgroundPosition='center';
-          div.style.backgroundPosition=jogo;
+          div.style.backgroundPosition=`url(${jogo}`;
           let h2 = document.createElement("h2");
             h2.style.color = "red";
             h2.style.textAlign= "center";
