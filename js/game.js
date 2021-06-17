@@ -61,14 +61,14 @@ class PuzzleGame{
         i++
         })
 
-        let jogos=''
+        let jogo=''
 
         if(escolha==='opcao1'){
        
-          jogos="url(./img/jogo2.png)"
+          jogo="url(./img/jogo2.png)"
         }else if(escolha==='opcao2'){
 
-          jogos="url(./img/jogo1.jpg)"
+          jogo="url(./img/jogo1.jpg)"
         }
 
         
@@ -81,7 +81,7 @@ class PuzzleGame{
            div.style.height='100%';
           div.style.backgroundPosition='cover';
           div.style.backgroundPosition='center';
-          div.style.backgroundPosition=jogos;
+          div.style.backgroundPosition=jogo;
           let h2 = document.createElement("h2");
             h2.style.color = "red";
             h2.style.textAlign= "center";

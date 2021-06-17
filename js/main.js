@@ -58,6 +58,7 @@ function criarOpcoes(){
 
   opt1.addEventListener("click", function(event) {
  escolha = event.target.id;
+ 
  aux = [...pieces];
  document.querySelector(".gameOpional").innerHTML='';
  op=' width="200" height="170"';
@@ -82,11 +83,10 @@ function criarOpcoes(){
   let html='';
 puzzleGame.pieces.forEach(element => { 
 
-
-
      html+=`<div class="piece" >`;
      html+=`<div class="immagem"id="${element.name}"  ><img id="${element.name}" src="./img/${element.img}" ${op}></div>`;
      html+=`</div>`;
+
 });
 
 
@@ -105,16 +105,10 @@ document.querySelector(".foot").innerHTML=botao;
 document.querySelectorAll(".piece").forEach( piece => {
   piece.onclick = function() {
     image.push(piece)
-  // game.push(piece)
-  // let name = piece.getAttribute('number-piece');
- //  console.log(pieces.indexeOf(name))
-//console.log(name )
-//contagem de clicks
 
 
 cont=cont+1
 let clicks = document.getElementById('clicked')
-
 
 
  if(image.length===2){
@@ -126,13 +120,13 @@ let clicks = document.getElementById('clicked')
 
       pic1=image[0].innerHTML
       let name0 = image[0].firstChild.id;
-      console.log(image[0])
+    
       
       
 
       pic2=image[1].innerHTML
       let name1 = image[1].firstChild.id;
-      console.log(image[1])
+     
       
 
 
@@ -146,7 +140,7 @@ let clicks = document.getElementById('clicked')
 
 
       puzzleGame.isFinished(escolha)
-    //  console.log(game)
+
 
   }
   
