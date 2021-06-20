@@ -1,96 +1,95 @@
-
 html{
-     height: 100vh;
-    width: 100vw;
+    height: 100vh;
+   width: 100vw;
 }
 
 
 nav{
-   display: flex;
-   justify-content:space-between;
-    height: 15vh;
-    width: 100vw;
-    background-color:#565b64ea;
-    border:rgb(25, 48, 177) solid 1px;
-    color: lightskyblue;
-    box-shadow: inset 0px 0px 20px -6px rgb(60, 88, 146);
-    background-color:#4371BC;
-    opacity: 0.5;
-    padding: 15px;
+  display: flex;
+  justify-content:space-between;
+   height: 15vh;
+   width: 100vw;
+   background-color:#565b64ea;
+   border:rgb(25, 48, 177) solid 1px;
+   color: lightskyblue;
+   box-shadow: inset 0px 0px 20px -6px rgb(60, 88, 146);
+   background-color:#4371BC;
+   opacity: 0.5;
+   padding: 15px;
 
 }
 
 h1{
-  padding-top: 2%;
-  color: white;
-  margin-left: 40%;
+ padding-top: 2%;
+ color: white;
+ margin-left: 40%;
 
 
 }
 
 p{
 display: inline-block;
-    padding: 40px;
+   padding: 40px;
 }
 
 .back{
-    background-image: url("../img/R29e69e2c3125fb2465ed62255ea99640.jpg");
-    background-color: #cccccc;
+   background-image: url("../img/R29e69e2c3125fb2465ed62255ea99640.jpg");
+   background-color: #cccccc;
 
-    background-position: center;
+   background-position: center;
 
-    background-size: cover;
-  
+   background-size: cover;
+ 
 }
 
 .game{
 
-    background:#dddddd;
-	width:50vw;
-	height:70vh;
-	padding:0;
-	margin:0px auto;
-     box-shadow: inset 0px 0px 20px -6px rgb(102, 96, 109);
-     display: flex;
-     flex-direction: row;
-     flex-wrap:wrap;
-    justify-content:center;
-   
+   background:#dddddd;
+   width:50vw;
+   height:70vh;
+   padding:0;
+   margin:0px auto;
+    box-shadow: inset 0px 0px 20px -6px rgb(102, 96, 109);
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+   justify-content:center;
+  
 }
 
 .gameOpional{
 
-    background:rgba(81, 111, 194, 0.664);
+   background:rgba(81, 111, 194, 0.664);
 
-	width:50vw;
-	height:70vh;
+   width:50vw;
+   height:70vh;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
- #opcao1 {
+#opcao1 {
 
-    height: auto;
-    width: 100px;
+   height: auto;
+   width: 100px;
 border-radius: 80px;
 margin: 10px;
 
 }
 #opcao2 {
 
-    height: auto;
-    width: 100px;
+   height: auto;
+   width: 100px;
 border-radius: 80px;
 margin: 10px;
 }
 
 #back{
-  
-    height: auto;
-    width: 100px;
+ 
+   height: auto;
+   width: 100px;
 border-radius: 80px;
 display: flex;
 justify-content: center;
@@ -102,10 +101,10 @@ margin-top: 15px;
 
 
 
- .immagem {
-     
-  height:100%;
-  width: 100%;
+.immagem {
+    
+ height:100%;
+ width: 100%;
 
 
 
@@ -113,12 +112,12 @@ margin-top: 15px;
 }
 
 .foot{
-    width: 100vw;
-    height: 10vh;
-    background-color:#4371BC;
-    opacity: 0.5;
-    display: flex;
-    justify-content: center;
+   width: 100vw;
+   height: 10vh;
+   background-color:#4371BC;
+   opacity: 0.5;
+   display: flex;
+   justify-content: center;
 }
 
 @media (min-width: 360px) and (max-width: 450px) {
