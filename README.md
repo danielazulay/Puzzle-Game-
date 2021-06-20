@@ -2,7 +2,7 @@
 
 ## About the Game
 Iceberg Puzzle Game is a game about swaping pieces to complete the whole image of icebergs.  This is a game built in DOM ,HTML, CSS and JavaScript as a part of a Ironhack project.
-
+The game is responsive for iphone6/7/8 only the game level easy.
 
 ## About the creator
 I am a Bachelor's Degree Information System, and student at Ironhack!!!
