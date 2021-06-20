@@ -42,13 +42,14 @@ function criarOpcoes(){
 
   board+=`<div class="gameOpional">`
   board+=`<button type="button" id="opcao1">Easy</button>`
-  board+=`<button type="button" id="opcao2">Hard</button>`
+    board+=`<button type="button" id="opcao2">Hard</button>`
   board+=`</div>`
 
  
   document.querySelector(".game").innerHTML=board;
   let buttons = document.querySelector(".gameOpional")
   let opt1 = buttons .querySelector("#opcao1");
+  
 
   let opt2 = buttons .querySelector("#opcao2");
 
@@ -73,7 +74,7 @@ function criarOpcoes(){
     escolha = event.target.id;
       aux = [...pieces1] ;
       document.querySelector(".gameOpional").innerHTML=''
-       op =' width="130" height="170"';
+     op =' width="130" height="170"';
        const puzzleGame = new PuzzleGame(aux);
        criarCartas(op,puzzleGame)
        let classe= pieces2;
@@ -86,8 +87,8 @@ function criarOpcoes(){
   let html='';
 puzzleGame.pieces.forEach(element => { 
 
-     html+=`<div class="piece" >`;
-     html+=`<div class="immagem"id="${element.name}"  ><img id="${element.name}" src="./img/${element.img}" ${op}></div>`;
+     html+=`<div class="piece"  >`;
+     html+=`<div class="immagem"id="${element.name}"  ><img  id="${element.name}" src="./img/${element.img}" ${op} ></div>`;
      html+=`</div>`;
 
 });
