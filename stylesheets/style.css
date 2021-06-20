@@ -111,6 +111,10 @@ margin-top: 15px;
 
 }
 
+#start{
+    display: none;
+}
+
 .foot{
    width: 100vw;
    height: 10vh;
@@ -141,16 +145,25 @@ text-align: center;
  
 
   .back{
-width: 100%;
+width:100%;
   
 }
 
   .game{
 
-	width:100vw;
+    width:100%;
     
 
   }
+  .gameOpional{
+
+  
+ 
+    width:100vw;
+    height:70vh;
+ 
+
+ }
   img {
     max-height:155px;
     max-width: 120px;
@@ -174,8 +187,20 @@ width: 100%;
     display:none;
 }
 
+#opcao1 {
+
+    visibility: hidden;
+ 
+}
 
 
+ #opcao1:after {
+    content: 'Start';
+    visibility: visible;
+
+color: silver;
+
+  }
 
 
 }
