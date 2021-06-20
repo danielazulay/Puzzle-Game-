@@ -56,6 +56,7 @@ function criarOpcoes(){
   let aux=[]
 
 
+
   opt1.addEventListener("click", function(event) {
  escolha = event.target.id;
  
@@ -64,6 +65,7 @@ function criarOpcoes(){
  op=' width="200" height="170"';
  const puzzleGame = new PuzzleGame(aux);
  criarCartas(op,puzzleGame)
+ let classe= pieces1;
   })
 
 
@@ -74,6 +76,7 @@ function criarOpcoes(){
        op =' width="130" height="170"';
        const puzzleGame = new PuzzleGame(aux);
        criarCartas(op,puzzleGame)
+       let classe= pieces2;
      });
 
     }
