@@ -121,3 +121,63 @@ margin-top: 15px;
     justify-content: center;
 }
 
+@media (min-width: 360px) and (max-width: 450px) {
+    nav{
+      
+         height: 120px;
+         width: 100vw;
+        
+
+  }
+
+  h1{
+
+    color: white;
+text-align: center;
+    font-size: 1px;
+    margin: 0;  
+    padding: 20px;
+  }
+
+ 
+
+  .back{
+width: 100%;
+  
+}
+
+  .game{
+
+	width:100vw;
+    
+
+  }
+  img {
+    max-height:150px;
+    max-width: 120px;
+  }
+  .immagem {
+     
+    max-height:100%;
+    max-width: 100%; 
+  
+  }
+ 
+  .foot{
+    width: 100vw;
+    height:80px;
+   
+}
+
+
+#opcao2 {
+
+    display:none;
+}
+
+
+
+
+
+}
+
